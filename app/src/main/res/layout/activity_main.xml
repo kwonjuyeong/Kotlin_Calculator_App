@@ -17,7 +17,6 @@
         android:padding="10dp"
         android:textStyle="bold"
         android:textSize="48sp"
-        android:text="@string/Calculate"
         android:gravity="end|bottom"/>
     <!--android:text="@string/Calculate"/>-->
 
