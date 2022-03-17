@@ -11,10 +11,11 @@
     <string name="_4">4</string>
     <string name="_5">5</string>
     <string name="_6">6</string>
-    <string name="Multiply">X</string>
+    <string name="Multiply">x</string>
     <string name="Minus">-</string>
     <string name="_0">0</string>
     <string name="clear">clear</string>
     <string name="Plus">+</string>
     <string name="Equals">=</string>
+    <string name="Dot">.</string>
 </resources>

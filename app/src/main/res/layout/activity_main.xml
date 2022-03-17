@@ -19,6 +19,7 @@
         android:textSize="48sp"
         android:text="@string/Calculate"
         android:gravity="end|bottom"/>
+    <!--android:text="@string/Calculate"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +32,7 @@
             android:id="@+id/btnCLR"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:text="@string/clear"
@@ -78,7 +79,7 @@
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:text="@string/Divide"
@@ -126,7 +127,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:text="@string/Plus"
             tools:ignore="UsingOnClickInXml" />
 
@@ -168,7 +169,7 @@
             android:id="@+id/btnSubtract"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:text="@string/Minus"
@@ -182,21 +183,33 @@
         android:orientation="horizontal"
         android:layout_weight="1">
 
+
+
         <Button
             android:id="@+id/btnZero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="2dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:onClick="onDigit"
             android:text="@string/_0"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:onClick="onDemicalPoint"
+            android:text="@string/Dot"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btnMultiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_weight="1"
             android:layout_margin="2dp"
             android:text="@string/Multiply"
@@ -207,7 +220,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:onClick="onDigit"
+            android:onClick="onEqual"
             android:text="@string/Equals"
             tools:ignore="UsingOnClickInXml" />
 
